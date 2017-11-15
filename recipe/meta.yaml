@@ -1,6 +1,6 @@
 {% set name = "conda-gitenv" %}
-{% set version = "0.3.0" %}
-{% set sha = "510aad836feb5e0c3be2be3546a974319dff7d6fb389e8ab6c20a5ff92da6a17" %}
+{% set version = "0.3.1" %}
+{% set sha = "baa170ef677381612d49e5156aa147d16c03148604b3894629267a49360739a7" %}
 
 package:
   name: {{ name }} 
@@ -14,6 +14,7 @@ source:
 build:
   number: 0
   script: python setup.py install --single-version-externally-managed --record record.txt
+  noarch: python
 
 requirements:
   build:

@@ -14,9 +14,7 @@ Summary: Track environment specifications using a git repo.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/conda-gitenv-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/conda-gitenv-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/conda-gitenv-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/conda-gitenv-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/conda-gitenv-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/conda-gitenv-feedstock/branch/master)
+All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/conda-gitenv-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/conda-gitenv-feedstock)
 
 Current release info
 ====================
