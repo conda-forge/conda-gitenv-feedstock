@@ -13,13 +13,14 @@ source:
 
 build:
   number: 0
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
   noarch: python
   entry_points:
     - conda-gitenv = conda_gitenv.cli:main
 
 requirements:
-  build:
+  host:
+    - pip
     - python
     - setuptools
   run:
