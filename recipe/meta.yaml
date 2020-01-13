@@ -1,6 +1,6 @@
 {% set name = "conda-gitenv" %}
-{% set version = "0.3.1" %}
-{% set sha = "baa170ef677381612d49e5156aa147d16c03148604b3894629267a49360739a7" %}
+{% set version = "0.4.0" %}
+{% set sha = "4540184e41a1c02b1fea53235f365b7d87ff82a8e8c1640251170ab27a4b5ee1" %}
 
 package:
   name: {{ name }} 
@@ -13,24 +13,26 @@ source:
 
 build:
   number: 0
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
   noarch: python
   entry_points:
     - conda-gitenv = conda_gitenv.cli:main
 
 requirements:
-  build:
+  host:
     - python
-    - setuptools
+    - pip
   run:
     - python
     - gitpython
     - pyyaml
-    - conda
+    - conda 4.3.*
     - conda-build-all
     - conda-build
 
 test:
+  requires:
+    - git
   imports:
     - conda_gitenv
   commands:
