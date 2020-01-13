@@ -1,5 +1,5 @@
 {% set name = "conda-gitenv" %}
-{% set version = "0.3.1" %}
+{% set version = "0.4.0" %}
 {% set sha = "baa170ef677381612d49e5156aa147d16c03148604b3894629267a49360739a7" %}
 
 package:
